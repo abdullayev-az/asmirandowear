@@ -7,16 +7,6 @@ root.style.setProperty("--marquee-elements", marqueeContent.children.length);
 for(let i=0; i<marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
-
-const root = document.documentElement;
-const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
-const marqueeContent = document.querySelector("ul.marquee-content");
-
-root.style.setProperty("--marquee-elements", marqueeContent.children.length);
-
-for(let i=0; i<marqueeElementsDisplayed; i++) {
-  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-}
 // Loader başlayanda scroll-u bağla
 document.body.classList.add("no-scroll");
 
@@ -40,3 +30,4 @@ window.addEventListener("beforeunload", () => {
   loader.style.opacity = "1";
   loader.style.visibility = "visible";
 });
+AOS.init();
