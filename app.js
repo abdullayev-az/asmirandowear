@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
     loader.style.visibility = "hidden";
 
     document.body.classList.remove("no-scroll"); // scroll açılır
-  }, 1500);
+  }, 1000);
 });
 
 // Refresh zamanı yenə bağla
