@@ -241,6 +241,7 @@ main .indirim a img:hover{
     visibility: hidden;
     transition: 0.3s;
     opacity: 0;
+    z-index: 999999999;
 }
 .pantolon-list:hover .drop-ul{
     visibility: visible;
