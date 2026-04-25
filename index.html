@@ -1,0 +1,1212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header-->
+    <header>
+      <div class="nav-logo">
+        <a href=""><img src="img/logo.jpeg" alt="" /></a>
+        <input type="search" placeholder="Axtarınn" />
+      </div>
+      <div class="nav-user">
+        <a href=""><img src="img/heart.png" alt="" /></a>
+        <a href=""><img src="img/user.png" alt="" />Üye Ol</a>
+        <a class="sebet" href="">
+          <div class="seb-icon">
+            <img src="img/cart.png" alt="" />
+            <div class="index">0</div>
+          </div>
+          <span></span>
+        </a>
+        <div
+          class="nav-bars"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasTop"
+          aria-controls="offcanvasTop"
+        >
+          <img src="img/menu.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- kategory-->
+    <section class="kategory">
+      <ul>
+        <li>
+          <a href=""><img src="img/star.png" alt="" />Yeni Sezon</a>
+        </li>
+        <li>
+          <a href=""><img src="img/t-shirt.png" alt="" />T-shirt</a>
+        </li>
+        <li>
+          <a href=""><img src="img/sports.png" alt="" />Sweat</a>
+        </li>
+        <li>
+          <a href=""><img src="img/blouse.png" alt="" />Gömlek</a>
+        </li>
+        <li>
+          <a href=""><img src="img/lab-coat.png" alt="" />Ceket</a>
+        </li>
+        <li class="pantolon-list">
+          <a href="">
+            <img src="img/trouser.png" alt="" />
+            Pantolon
+            <img src="img/down-arrow.png" alt="" />
+          </a>
+          <ul class="drop-ul">
+            <li><a href="">Jean</a></li>
+            <li><a href="">Baggy</a></li>
+            <li><a href="">Kumaş Pantolon</a></li>
+            <li><a href="">Keten</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href=""><img src="img/sweatpants.png" alt="" />Eşofman altı</a>
+        </li>
+        <li>
+          <a href=""><img src="img/shorts.png" alt="" />Şort</a>
+        </li>
+        <li>
+          <a href=""><img src="img/suit.png" alt="" />Takım</a>
+        </li>
+        <li>
+          <a href=""><img src="img/jacket.png" alt="" />Mont</a>
+        </li>
+        <li>
+          <a href=""><img src="img/trench-coat.png" alt="" />Kaban</a>
+        </li>
+        <li>
+          <a href=""><img src="img/shoe.png" alt="" />Ayakkabı</a>
+        </li>
+        <li class="pantolon-list">
+          <a href="">
+            <img src="img/wristwatch.png" alt="" />
+            Aksesuar
+            <img src="img/down-arrow.png" alt="" />
+          </a>
+          <ul class="drop-ul">
+            <li><a href="">Kol Saati</a></li>
+            <li><a href="">Gözlük</a></li>
+            <li><a href="">Kolye</a></li>
+            <li><a href="">Kemer</a></li>
+            <li><a href="">Çanta</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href=""><img src="img/sale.png" alt="" />İndirim</a>
+        </li>
+      </ul>
+    </section>
+    <!-- offcanvas-->
+    <div
+      class="offcanvas offcanvas-top"
+      tabindex="-1"
+      id="offcanvasTop"
+      aria-labelledby="offcanvasTopLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <input type="search" placeholder="Axtarınn" />
+        <div class="kategory-list">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <a href="index.html" class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <img src="img/star.png" alt="" /> Yeni Sezon
+                </button>
+              </a>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a href="" class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <img src="img/t-shirt.png" alt="" /> T-Shirt
+                </button>
+              </a>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a href="" class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <img src="img/sports.png" alt="" /> Sweat
+                </button>
+              </a>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a href="" class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  <img src="img/blouse.png" alt="" /> Gömlek
+                </button>
+              </a>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a href="" class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  <img src="img/lab-coat.png" alt="" /> Ceket
+                </button>
+              </a>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button
+                  class="accordion-button collapsed down-arrow"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  <img src="img/trouser.png" alt="" /> Pantolon
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div class="accordion" id="accordionExample1">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading1">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse1"
+                          aria-expanded="false"
+                          aria-controls="collapse1"
+                        >
+                          Jean
+                        </button>
+                      </h2>
+                      <div
+                        id="collapse1"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="heading1"
+                        data-bs-parent="#accordionExample1"
+                      >
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading2">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse2"
+                          aria-expanded="false"
+                          aria-controls="collapse2"
+                        >
+                          Baggy
+                        </button>
+                      </h2>
+                      <div
+                        id="collapse2"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="heading2"
+                        data-bs-parent="#accordionExample1"
+                      >
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading3">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse3"
+                          aria-expanded="false"
+                          aria-controls="collapse3"
+                        >
+                          Kumaş Pantolon
+                        </button>
+                      </h2>
+                      <div
+                        id="collapse3"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="heading3"
+                        data-bs-parent="#accordionExample1"
+                      >
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading4">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse4"
+                          aria-expanded="false"
+                          aria-controls="collapse4"
+                        >
+                          Keten
+                        </button>
+                      </h2>
+                      <div
+                        id="collapse4"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="heading4"
+                        data-bs-parent="#accordionExample1"
+                      >
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a href="" class="accordion-header" id="headingSeven">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="collapseSeven"
+                >
+                  <img src="img/sweatpants.png" alt="" /> Eşofman Altı
+                </button>
+              </a>
+              <div
+                id="collapseSeven"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingSeven"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a href="" class="accordion-header" id="headingEight">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseEight"
+                  aria-expanded="false"
+                  aria-controls="collapseEight"
+                >
+                  <img src="img/shorts.png" alt="" /> Şort
+                </button>
+              </a>
+              <div
+                id="collapseEight"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingEight"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a href="" class="accordion-header" id="headingNine">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseNine"
+                  aria-expanded="false"
+                  aria-controls="collapseNine"
+                >
+                  <img src="img/suit.png" alt="" /> Suit
+                </button>
+              </a>
+              <div
+                id="collapseNine"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingNine"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a href="" class="accordion-header" id="headingTen">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTen"
+                  aria-expanded="false"
+                  aria-controls="collapseTen"
+                >
+                  <img src="img/jacket.png" alt="" /> Mont
+                </button>
+              </a>
+              <div
+                id="collapseTen"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTen"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a href="" class="accordion-header" id="heading11">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse11"
+                  aria-expanded="false"
+                  aria-controls="collapse11"
+                >
+                  <img src="img/trench-coat.png" alt="" /> Kaban
+                </button>
+              </a>
+              <div
+                id="collapse11"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading11"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a href="" class="accordion-header" id="heading12">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse12"
+                  aria-expanded="false"
+                  aria-controls="collapse12"
+                >
+                  <img src="img/shoe.png" alt="" /> Ayakkabı
+                </button>
+              </a>
+              <div
+                id="collapse12"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading12"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading15">
+                <button
+                  class="accordion-button collapsed down-arrow"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse15"
+                  aria-expanded="false"
+                  aria-controls="collapse15"
+                >
+                  <img src="img/wristwatch.png" alt="" /> Aksesuar
+                </button>
+              </h2>
+              <div
+                id="collapse15"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading15"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div class="accordion" id="accordionExample2">
+                    <div class="accordion-item">
+                      <a href="" class="accordion-header" id="heading01">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse01"
+                          aria-expanded="false"
+                          aria-controls="collapse01"
+                        >
+                          <img src="img/wristwatch.png" alt="" /> Kol Saati
+                        </button>
+                      </a>
+                      <div
+                        id="collapse01"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="heading01"
+                        data-bs-parent="#accordionExample2"
+                      >
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <a href="" class="accordion-header" id="heading02">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse02"
+                          aria-expanded="false"
+                          aria-controls="collapse02"
+                        >
+                          <img src="img/wristwatch.png" alt="" /> Gözlük
+                        </button>
+                      </a>
+                      <div
+                        id="collapse02"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="heading02"
+                        data-bs-parent="#accordionExample2"
+                      >
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <a href="" class="accordion-header" id="heading03">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse03"
+                          aria-expanded="false"
+                          aria-controls="collapse03"
+                        >
+                          <img src="img/wristwatch.png" alt="" /> Kolye
+                        </button>
+                      </a>
+                      <div
+                        id="collapse03"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="heading03"
+                        data-bs-parent="#accordionExample2"
+                      >
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <a href="" class="accordion-header" id="heading04">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse04"
+                          aria-expanded="false"
+                          aria-controls="collapse04"
+                        >
+                          <img src="img/wristwatch.png" alt="" /> Kemer
+                        </button>
+                      </a>
+                      <div
+                        id="collapse04"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="heading04"
+                        data-bs-parent="#accordionExample2"
+                      >
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <a href="" class="accordion-header" id="heading05">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse05"
+                          aria-expanded="false"
+                          aria-controls="collapse05"
+                        >
+                          <img src="img/wristwatch.png" alt="" /> Çanta
+                        </button>
+                      </a>
+                      <div
+                        id="collapse05"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="heading05"
+                        data-bs-parent="#accordionExample2"
+                      >
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <a href="" class="accordion-header" id="heading13">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse13"
+                  aria-expanded="false"
+                  aria-controls="collapse13"
+                >
+                  <img src="img/sale.png" alt="" /> İndirim
+                </button>
+              </a>
+              <div
+                id="collapse13"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading13"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--menu-->
+    <main>
+      <div class="indirim">
+        <a href="">
+          <img src="https://modayakamoz.com/kategori/uyg.png?v=01" alt="" />
+        </a>
+      </div>
+      <div class="indirim">
+        <div class="item">
+          <a href="">
+            <img src="https://modayakamoz.com/kategori/uyg.png?v=01" alt="" />
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <img src="https://modayakamoz.com/kategori/kamp4.png?v=3" alt="" />
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <img src="https://modayakamoz.com/kategori/slider1.png?v=01" alt="" />
+          </a>
+        </div>
+      </div>
+    </main>
+    <!--karusel-->
+    <section class="carousell">
+      <div class="marquee">
+        <ul class="marquee-content">
+          <li>
+            <a href=""
+              ><img src="https://modayakamoz.com/img/kja/5.png?v=011" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="https://modayakamoz.com/img/kja/3.png?v=011" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="https://modayakamoz.com/img/kja/4.png?v=011" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="https://modayakamoz.com/img/kja/1.png?v=011" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="https://modayakamoz.com/img/kja/2.png?v=011" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="https://modayakamoz.com/img/kja/3.png?v=011" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="https://modayakamoz.com/img/kja/4.png?v=011" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="https://modayakamoz.com/img/kja/1.png?v=011" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="overview">
+      <div class="item-menu">
+        <a href=""
+          ><img src="https://modayakamoz.com/kategori/bot.png?v=01" alt=""
+        /></a>
+      </div>
+      <div class="item-menu">
+        <a href=""
+          ><img src="https://modayakamoz.com/kategori/cizme.png?v=01" alt=""
+        /></a>
+      </div>
+      <div class="item-menu">
+        <a href=""
+          ><img src="https://modayakamoz.com/kategori/cizme.png?v=01" alt=""
+        /></a>
+      </div>
+      <div class="item-menu">
+        <a href=""
+          ><img src="https://modayakamoz.com/kategori/cizme.png?v=01" alt=""
+        /></a>
+      </div>
+      <div class="item-menu">
+        <a href=""
+          ><img src="https://modayakamoz.com/kategori/cizme.png?v=01" alt=""
+        /></a>
+      </div>
+      <div class="item-menu">
+        <a href=""
+          ><img src="https://modayakamoz.com/kategori/cizme.png?v=01" alt=""
+        /></a>
+      </div>
+    </section>
+    <!--Servis-->
+    <section>
+      <div class="services">
+        <div class="service-item">
+          <div class="service-img">
+            <img src="img/security.png" alt="" />
+          </div>
+          <div class="service-text">
+            <h5>Güvenli AlışVeriş</h5>
+            <p>
+              SSL güvenlikli ödeme sistemi ile online ödeme işlemlerinde kişisel
+              ve finansal bilgileriniz korunur
+            </p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-img">
+            <img src="img/shipped.png" alt="" />
+          </div>
+          <div class="service-text">
+            <h5>Hızlı Kargo</h5>
+            <p>
+              Ürünleriniz en kısa sürede kargoya verilerek en hızlı şekilde size
+              ulaşması sağlanır.
+            </p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-img">
+            <img src="img/refresh.png" alt="" />
+          </div>
+          <div class="service-text">
+            <h5>Kolay İade & Değişim</h5>
+            <p>
+              Ürünlerle ilgili memnun kalmamanız durumunda ürün değişimini hemen
+              yapıyoruz.
+            </p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-img">
+            <img src="img/award.png" alt="" />
+          </div>
+          <div class="service-text">
+            <h5>%100 Müşteri Memnuniyyeti</h5>
+            <p>Tarzını yansıt , kaliteyi hiss et.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer>
+      <div class="item-1">
+        <div class="footer-logo">
+          <a href=""><img src="img/logo.jpeg" alt="" /></a>
+          <span>İletişim:</span>
+          <span class="call">(+90) 552 011 62 05</span>
+          <span
+            >Adres: Gazi Mustafa Kemal Paşa Mahallesi Özcan Sokak No:10/B
+            Mirando Tekirdağ, Çerkezköy</span
+          >
+        </div>
+        <div class="footer-company">
+          <div>
+            <span>Kategoriler</span>
+            <span>Yeni Sezon</span>
+            <span>T-Shirt</span>
+            <span>Sweat</span>
+            <span>Gömlek</span>
+            <span>Pantalon</span>
+            <span>Ceket</span>
+            <span>Aksesuar</span>
+            <span>İndirim</span>
+          </div>
+          <div>
+            <span>Kullanım Şartları</span>
+            <span>Hakkımızda</span>
+            <span>Üyelik</span>
+            <span>KVKK</span>
+            <span>Mesafeli Satış sözleşmesi</span>
+            <span>Ödeme işlemleri</span>
+            <span>Kargo Teslimat</span>
+            <span>Değişim İade İşlemleri</span>
+            <span>Gizlilik Polisitkası</span>
+          </div>
+        </div>
+      </div>
+      <div class="item-2">
+        <span>Yardıma mı ihtiyacın var?</span>
+        <span
+          >MirandoWear Müşteri Hizmetleri, ürün ve hizmetlerimiz,
+          siparişleriniz, değişim ve iade işlemleriniz, görüş ve önerileriniz
+          için Pazartesi-Cuma saat 08.30-16.00 saatleri arasında yanınızda</span
+        >
+        <a href=""
+          ><img src="img/whatsapp.png" alt="" /> WhatsApp Destek <br />
+          (+90) 552 011 62 05
+        </a>
+      </div>
+    </footer>
+    <div class="dark">
+      <hr />
+    </div>
+    <div class="copyright">
+      <p>Tüm Hakları Saklıdır.Made by asmirandowear.com</p>
+      <div class="sosial">
+        <span
+          ><a href=""><img src="img/facebook.png" alt="" /></a
+        ></span>
+        <span
+          ><a href=""><img src="img/instagram.png" alt="" /></a
+        ></span>
+        <span
+          ><a href=""><img src="img/tik-tok.png" alt="" /></a
+        ></span>
+        <span
+          ><a href=""><img src="img/whatsapp.png" alt="" /></a
+        ></span>
+      </div>
+    </div>
+    <div class="loader-menu">
+      <!-- From Uiverse.io by andrew-manzyk -->
+      <div class="loader">
+        <svg
+          id="pegtopone"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 100 100"
+        >
+          <defs>
+            <filter id="shine">
+              <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+            </filter>
+            <mask id="mask">
+              <path
+                d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+                fill="white"
+              ></path>
+            </mask>
+            <radialGradient
+              id="gradient-1"
+              cx="50"
+              cy="66"
+              fx="50"
+              fy="66"
+              r="30"
+              gradientTransform="translate(0 35) scale(1 0.5)"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="black" stop-opacity="0.3"></stop>
+              <stop offset="50%" stop-color="black" stop-opacity="0.1"></stop>
+              <stop offset="100%" stop-color="black" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient
+              id="gradient-2"
+              cx="55"
+              cy="20"
+              fx="55"
+              fy="20"
+              r="30"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="white" stop-opacity="0.3"></stop>
+              <stop offset="50%" stop-color="white" stop-opacity="0.1"></stop>
+              <stop offset="100%" stop-color="white" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient
+              id="gradient-3"
+              cx="85"
+              cy="50"
+              fx="85"
+              fy="50"
+              xlink:href="#gradient-2"
+            ></radialGradient>
+            <radialGradient
+              id="gradient-4"
+              cx="50"
+              cy="58"
+              fx="50"
+              fy="58"
+              r="60"
+              gradientTransform="translate(0 47) scale(1 0.2)"
+              xlink:href="#gradient-3"
+            ></radialGradient>
+            <linearGradient
+              id="gradient-5"
+              x1="50"
+              y1="90"
+              x2="50"
+              y2="10"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="black" stop-opacity="0.2"></stop>
+              <stop offset="40%" stop-color="black" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+          <g>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-1)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="none"
+              stroke="white"
+              opacity="0.3"
+              stroke-width="3"
+              filter="url(#shine)"
+              mask="url(#mask)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-2)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-3)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-4)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-5)"
+            ></path>
+          </g>
+        </svg>
+        <svg
+          id="pegtoptwo"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 100 100"
+        >
+          <defs>
+            <filter id="shine">
+              <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+            </filter>
+            <mask id="mask">
+              <path
+                d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+                fill="white"
+              ></path>
+            </mask>
+            <radialGradient
+              id="gradient-1"
+              cx="50"
+              cy="66"
+              fx="50"
+              fy="66"
+              r="30"
+              gradientTransform="translate(0 35) scale(1 0.5)"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="black" stop-opacity="0.3"></stop>
+              <stop offset="50%" stop-color="black" stop-opacity="0.1"></stop>
+              <stop offset="100%" stop-color="black" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient
+              id="gradient-2"
+              cx="55"
+              cy="20"
+              fx="55"
+              fy="20"
+              r="30"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="white" stop-opacity="0.3"></stop>
+              <stop offset="50%" stop-color="white" stop-opacity="0.1"></stop>
+              <stop offset="100%" stop-color="white" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient
+              id="gradient-3"
+              cx="85"
+              cy="50"
+              fx="85"
+              fy="50"
+              xlink:href="#gradient-2"
+            ></radialGradient>
+            <radialGradient
+              id="gradient-4"
+              cx="50"
+              cy="58"
+              fx="50"
+              fy="58"
+              r="60"
+              gradientTransform="translate(0 47) scale(1 0.2)"
+              xlink:href="#gradient-3"
+            ></radialGradient>
+            <linearGradient
+              id="gradient-5"
+              x1="50"
+              y1="90"
+              x2="50"
+              y2="10"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="black" stop-opacity="0.2"></stop>
+              <stop offset="40%" stop-color="black" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+          <g>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-1)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="none"
+              stroke="white"
+              opacity="0.3"
+              stroke-width="3"
+              filter="url(#shine)"
+              mask="url(#mask)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-2)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-3)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-4)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-5)"
+            ></path>
+          </g>
+        </svg>
+        <svg
+          id="pegtopthree"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 100 100"
+        >
+          <defs>
+            <filter id="shine">
+              <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+            </filter>
+            <mask id="mask">
+              <path
+                d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+                fill="white"
+              ></path>
+            </mask>
+            <radialGradient
+              id="gradient-1"
+              cx="50"
+              cy="66"
+              fx="50"
+              fy="66"
+              r="30"
+              gradientTransform="translate(0 35) scale(1 0.5)"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="black" stop-opacity="0.3"></stop>
+              <stop offset="50%" stop-color="black" stop-opacity="0.1"></stop>
+              <stop offset="100%" stop-color="black" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient
+              id="gradient-2"
+              cx="55"
+              cy="20"
+              fx="55"
+              fy="20"
+              r="30"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="white" stop-opacity="0.3"></stop>
+              <stop offset="50%" stop-color="white" stop-opacity="0.1"></stop>
+              <stop offset="100%" stop-color="white" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient
+              id="gradient-3"
+              cx="85"
+              cy="50"
+              fx="85"
+              fy="50"
+              xlink:href="#gradient-2"
+            ></radialGradient>
+            <radialGradient
+              id="gradient-4"
+              cx="50"
+              cy="58"
+              fx="50"
+              fy="58"
+              r="60"
+              gradientTransform="translate(0 47) scale(1 0.2)"
+              xlink:href="#gradient-3"
+            ></radialGradient>
+            <linearGradient
+              id="gradient-5"
+              x1="50"
+              y1="90"
+              x2="50"
+              y2="10"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="black" stop-opacity="0.2"></stop>
+              <stop offset="40%" stop-color="black" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+          <g>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-1)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="none"
+              stroke="white"
+              opacity="0.3"
+              stroke-width="3"
+              filter="url(#shine)"
+              mask="url(#mask)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-2)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-3)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-4)"
+            ></path>
+            <path
+              d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z"
+              fill="url(#gradient-5)"
+            ></path>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
