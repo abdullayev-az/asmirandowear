@@ -454,7 +454,7 @@ footer .item-1> .footer-company>div span{
 /* From Uiverse.io by andrew-manzyk */ 
 .loader-menu{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -473,6 +473,7 @@ footer .item-1> .footer-company>div span{
   height: auto;
   position: relative;
   filter: drop-shadow(0 0 10px var(--shine-color));
+  top: -40px;
 }
 
 .loader #pegtopone {
