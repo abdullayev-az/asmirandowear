@@ -44,6 +44,38 @@ window.addEventListener("beforeunload", () => {
   }
 });
 
-// AOS kitabxanası işləsin
-AOS.init();
-console.log("fayl yükləndi");
+document.addEventListener('DOMContentLoaded', () => {
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+    let currentImageIndex = 0;
+
+    // Function to update the main image
+    function updateMainImage(index) {
+        mainImage.src = thumbnails[index].src.replace('100x100', '400x400');
+        currentImageIndex = index;
+    }
+
+    // Add event listeners for thumbnail clicks
+    thumbnails.forEach((thumbnail, index) => {
+        thumbnail.addEventListener('click', () => {
+            updateMainImage(index);
+        });
+    });
+
+    // Next and Prev buttons for image carousel
+    document.querySelector('.next').addEventListener('click', () => {
+        if (currentImageIndex < thumbnails.length - 1) {
+            updateMainImage(currentImageIndex + 1);
+        } else {
+            updateMainImage(0);
+        }
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+        if (currentImageIndex > 0) {
+            updateMainImage(currentImageIndex - 1);
+        } else {
+            updateMainImage(thumbnails.length - 1);
+        }
+    });
+});
