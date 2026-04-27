@@ -21,7 +21,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 100px;
+    padding: 0px 0px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 1051;
@@ -34,7 +34,7 @@ header{
     width: 60%;
 }
 .nav-logo img{
-    width: 100px;
+    width: 400px;
 }
 .nav-logo>input{
     width: 70%;
@@ -58,7 +58,7 @@ header{
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     color: #fff;
 }
 .nav-user>a img{
@@ -68,7 +68,7 @@ header{
 .sebet {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 5px !important;
 }
 .sebet .seb-icon{
     background-color: #fff;
@@ -128,14 +128,19 @@ header{
 }
 main{
     width: 100%;
-    padding: 10px 100px;
+    height: 80vh;
+    padding: 10px 0px;
     display: flex;
     align-items: center;
     gap: 15px;
+    background-color: #000;
+    background-image: url(img/bg-main.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 main .indirim{
     width: 50%;
-    height: 350px;
     border-radius: 5px;
     overflow: hidden;
     display: flex;
@@ -143,6 +148,7 @@ main .indirim{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
 }
 main .indirim .item{
     width: 48%;
@@ -155,8 +161,7 @@ main .indirim .item:last-child{
 }
 main .indirim img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: 0.3s;
 }
 main .indirim a{
@@ -166,6 +171,40 @@ main .indirim a{
 main .indirim a img:hover{
     scale: 1.1;
 }
+.menu-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.menu-content span{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0 0 10px #B27317;
+}
+.menu-content span div{
+    padding: 10px;
+    border-radius: 50%;
+    border: 0.5px solid #FFD700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    box-shadow: 0 0 10px #B27317;
+}
+.menu-content span div img{
+    width: 30px;
+}
+.indirim a{
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+.indirim a img{
+    width: 60%;
+}
 :root {
   --marquee-width: 100%;
   --marquee-height: 45vh;
@@ -173,6 +212,10 @@ main .indirim a img:hover{
   --marquee-elements-displayed: 5;
   --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
   --marquee-animation-duration: calc(var(--marquee-elements) * 5s);
+}
+.indirim .bg-man{
+    width: 100%;
+    height: auto;
 }
 
 .carousell{
@@ -473,7 +516,6 @@ footer .item-1> .footer-company>div span{
   height: auto;
   position: relative;
   filter: drop-shadow(0 0 10px var(--shine-color));
-  top: -40px;
 }
 
 .loader #pegtopone {
@@ -882,6 +924,9 @@ footer .item-1> .footer-company>div span{
     background-color: #ff6600;
     color: white;
 }
+.nav-user{
+    padding-right: 20px;
+}
 
 
 
@@ -900,10 +945,11 @@ footer .item-1> .footer-company>div span{
 
 @media (max-width: 991px){
     header{
-        padding: 20px 50px;
+        padding: 0px;
     }
     main{
-        padding: 10px 50px;
+        padding: 0px 0px;
+        height: 60vh;
     }
     .carousell{
         padding: 10px 50px;
@@ -1031,13 +1077,16 @@ footer .item-1> .footer-company>div span{
     .like{
         transform: translateX(0);
     }
+
 }
 @media (max-width: 768px){
     header{
-        padding: 20px 30px;
+        padding: 0px;
+        align-items: start;
     }
     main{
-        padding: 10px 30px;
+        padding: 10px 0px;
+        height: 45vh;
     }
     .carousell{
         padding: 10px 30px;
@@ -1131,15 +1180,41 @@ footer .item-1> .footer-company>div span{
     .product-details{
         width: 100% ;
     }
-
+    .nav-logo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-logo img{
+        width: 400px;
+    }
+    .nav-user{
+        background: #000;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+    }
+    .nav-user>a{
+        flex-direction: column;
+        gap: 5px;
+    }  
+    .nav-user>a span{
+        display: none;
+    }
+    .sebet{
+        flex-direction: row !important;
+    } 
 
 }
 @media (max-width: 576px){
     header{
-        padding: 20px 10px;
+        padding: 0px 0;
     }
     main{
         padding: 10px;
+        height: 30vh;
     }
     .carousell{
         padding: 10px;
@@ -1174,7 +1249,7 @@ footer .item-1> .footer-company>div span{
         font-size: 0.7em;
     }
     .nav-logo img{
-        width: 80px;
+        width: 250px;
     }
     .offcanvas-header{
         padding: 10px;
@@ -1260,5 +1335,15 @@ footer .item-1> .footer-company>div span{
     }
     .product .pro-img{
         height: 30vh;
+    }
+     main{
+        padding: 10px;
+        height: 27vh;
+    }
+}
+@media (max-width: 400px){
+     main{
+        padding: 10px;
+        height: 22vh;
     }
 }
